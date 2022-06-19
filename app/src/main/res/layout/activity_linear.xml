@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearActivity"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_dolphy"
+        android:src="@drawable/dolphin_icon"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dolphy"
+        android:text="DOLPHY"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#0026F8"
+        android:layout_gravity="center"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_signUP"
+        android:text="Sign UP "
+        android:layout_marginTop="60dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_gravity="center"/>
+
+
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_fb"
+        android:text="Continue with facebook"
+        android:background="@drawable/btn_bg"
+        android:textColor="#fff"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawableTint="#fff"
+        android:drawablePadding="20dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginHorizontal="50dp"/>
+
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_email"
+        android:text="Email or Phone"
+        android:background="@drawable/edt_bg"
+        android:textColor="#3F51B5"
+        android:layout_marginTop="40dp"
+        android:drawablePadding="20dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginHorizontal="50dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twitter_icon"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twitter_icon"
+            android:layout_marginRight="20dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twitter_icon"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -20,17 +20,17 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/home"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:src="@drawable/home" />
 
         <TextView
             android:id="@+id/tv_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/img_logo"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:text="Login"
-            android:layout_below="@id/img_logo"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -43,6 +43,7 @@
         android:background="@android:drawable/editbox_background"
         android:layout_centerInParent="true"
         android:elevation="10dp"
+        android:id="@+id/relative_main"
         android:layout_marginHorizontal="30dp">
 
         <EditText
@@ -99,17 +100,19 @@
     </RelativeLayout>
 
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
+        android:orientation="horizontal"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/relative_main"
+        android:layout_marginHorizontal="30dp">
 
         <android.widget.Button
             android:id="@+id/btn_fb"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_bg"
             android:backgroundTint="#58E9FB"
@@ -122,10 +125,10 @@
 
         <android.widget.Button
             android:id="@+id/btn_google"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_toRightOf="@+id/btn_fb"
             android:background="@drawable/btn_bg"
             android:backgroundTint="#E61D1D"
             android:drawableLeft="@drawable/ic_person"
@@ -135,6 +138,6 @@
             android:text="Google"
             android:textColor="#fff" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </RelativeLayout>
