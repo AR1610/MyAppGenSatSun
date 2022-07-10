@@ -107,7 +107,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginTop="60dp"
         android:layout_below="@+id/relative_main"
-        android:layout_marginHorizontal="30dp">
+        android:layout_marginHorizontal="20dp">
 
         <android.widget.Button
             android:id="@+id/btn_fb"

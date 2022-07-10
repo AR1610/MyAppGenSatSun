@@ -3,6 +3,7 @@ package com.myappgensatsun;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edtUserName;
     Button btnLogin;
     ImageView imgLogo;
+    Button btnGoogle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,18 @@ public class MainActivity extends AppCompatActivity {
         edtUserName = findViewById(R.id.edt_username);
         btnLogin = findViewById(R.id.btn_login);
         imgLogo = findViewById(R.id.img_logo);
+        btnGoogle = findViewById(R.id.btn_google);
+        btnGoogle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // implicit Intent
+         Intent i = new Intent();
+         i.setAction(Intent.ACTION_VIEW);
+         i.setData(Uri.parse("https://www.google.com/"));
+         startActivity(i);
+
+            }
+        });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
