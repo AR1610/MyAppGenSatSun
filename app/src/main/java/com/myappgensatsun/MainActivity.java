@@ -34,24 +34,23 @@ public class MainActivity extends AppCompatActivity {
          i.setAction(Intent.ACTION_VIEW);
          i.setData(Uri.parse("https://www.google.com/"));
          startActivity(i);
-
             }
         });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
              String strUserName = edtUserName.getText().toString();
              if (strUserName.equals("")){
                  Toast.makeText(MainActivity.this, "Please Enter Valid UserName", Toast.LENGTH_SHORT).show();
              }else {
                  imgLogo.setImageResource(R.drawable.dolphin_icon);
                  Toast.makeText(MainActivity.this, "UserName is "+strUserName, Toast.LENGTH_SHORT).show();
-                // Explicit Intent
+                 // Explicit Intent
                  Intent i = new Intent(MainActivity.this,HomeActivity.class);
                  i.putExtra("KEY_USERNAME",strUserName);
                  startActivity(i);
-
              }
             }
         });
