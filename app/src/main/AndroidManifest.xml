@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppGenSatSun">
         <activity
+            android:name=".ImagePickActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
@@ -21,7 +24,7 @@
             android:name=".LinearActivity"
             android:exported="true" />
         <activity
-            android:name=".ImagePickActivity"
+            android:name=".SeekbarActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

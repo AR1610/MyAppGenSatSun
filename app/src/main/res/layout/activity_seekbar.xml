@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeekbarActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbar"
+        android:padding="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_seekbar"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="Seekbar"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:layout_gravity="center"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_gravity="center"
+        android:id="@+id/ratingbar"
+        android:layout_marginTop="30dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ratingbar"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="Ratingbar"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:layout_gravity="center"/>
+</LinearLayout>
