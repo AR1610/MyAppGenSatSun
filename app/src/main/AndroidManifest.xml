@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppGenSatSun">
         <activity
+            android:name=".SeekbarActivity"
+            android:exported="false" />
+        <activity
             android:name=".ImagePickActivity"
             android:exported="false" />
         <activity
@@ -24,7 +27,7 @@
             android:name=".LinearActivity"
             android:exported="true" />
         <activity
-            android:name=".SeekbarActivity"
+            android:name=".AlertDialogActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
