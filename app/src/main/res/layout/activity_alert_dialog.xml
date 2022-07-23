@@ -13,5 +13,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_alert"
         android:text="Alert Dialog"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ctm_dialog"
+        android:text="Custom Dialog"/>
 
 </LinearLayout>

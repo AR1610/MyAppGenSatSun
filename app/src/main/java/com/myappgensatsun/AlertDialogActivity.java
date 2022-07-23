@@ -5,19 +5,39 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 public class AlertDialogActivity extends AppCompatActivity {
 
-    Button btnAlert;
+    Button btnAlert,btnCustomDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert_dialog);
         btnAlert = findViewById(R.id.btn_alert);
+        btnCustomDialog = findViewById(R.id.btn_ctm_dialog);
+        btnCustomDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                LayoutInflater layoutInflater = getLayoutInflater();
+
+                View myview = layoutInflater.inflate(R.layout.raw_dialog,null);
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(AlertDialogActivity.this);
+                builder.setView(myview);
+                builder.show();
+
+
+            }
+        });
+
+
+
         btnAlert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,7 +51,6 @@ public class AlertDialogActivity extends AppCompatActivity {
                         Toast.makeText(AlertDialogActivity.this, "Yes is clicked", Toast.LENGTH_SHORT).show();
                     }
                 });
-
                 builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -39,15 +58,12 @@ public class AlertDialogActivity extends AppCompatActivity {
                         Toast.makeText(AlertDialogActivity.this, "No ", Toast.LENGTH_SHORT).show();
                     }
                 });
-
-
                 builder.setNeutralButton("Finish", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
                     }
                 });
-
                 builder.show();
             }
         });
