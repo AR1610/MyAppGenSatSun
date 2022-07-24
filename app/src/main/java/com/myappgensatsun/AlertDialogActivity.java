@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class AlertDialogActivity extends AppCompatActivity {
@@ -20,23 +21,29 @@ public class AlertDialogActivity extends AppCompatActivity {
         setContentView(R.layout.activity_alert_dialog);
         btnAlert = findViewById(R.id.btn_alert);
         btnCustomDialog = findViewById(R.id.btn_ctm_dialog);
+
+
         btnCustomDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 LayoutInflater layoutInflater = getLayoutInflater();
-
                 View myview = layoutInflater.inflate(R.layout.raw_dialog,null);
-
+                EditText edtValue = myview.findViewById(R.id.edt_value);
+                Button btnAdd = myview.findViewById(R.id.btn_add);
+                btnAdd.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                      String strData =   edtValue.getText().toString();
+                        Toast.makeText(AlertDialogActivity.this, "Value is "+strData, Toast.LENGTH_SHORT).show();
+                    }
+                });
                 AlertDialog.Builder builder = new AlertDialog.Builder(AlertDialogActivity.this);
                 builder.setView(myview);
                 builder.show();
 
-
             }
         });
-
-
 
         btnAlert.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -17,6 +17,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/edt_value"
         android:background="@android:drawable/editbox_background"
         android:padding="10dp"
         android:hint="Enter Value"
@@ -26,5 +27,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add"
+        android:id="@+id/btn_add"
         android:layout_gravity="center"/>
 </LinearLayout>
