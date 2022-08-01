@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppGenSatSun">
         <activity
+            android:name=".DateTimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlertDialogActivity"
+            android:exported="false" />
+        <activity
             android:name=".SeekbarActivity"
             android:exported="false" />
         <activity
@@ -27,7 +33,7 @@
             android:name=".LinearActivity"
             android:exported="true" />
         <activity
-            android:name=".AlertDialogActivity"
+            android:name=".SpinnerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
