@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppGenSatSun">
         <activity
+            android:name=".SimpleGridViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SimpleListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpinnerActivity"
+            android:exported="false" />
+        <activity
             android:name=".DateTimeActivity"
             android:exported="false" />
         <activity
@@ -33,7 +42,7 @@
             android:name=".LinearActivity"
             android:exported="true" />
         <activity
-            android:name=".SpinnerActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
