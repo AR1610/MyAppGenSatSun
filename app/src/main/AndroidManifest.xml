@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppGenSatSun">
         <activity
+            android:name=".CustomGridViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".SimpleGridViewActivity"
             android:exported="false" />
         <activity
