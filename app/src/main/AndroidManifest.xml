@@ -12,6 +12,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppGenSatSun">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.MyAppGenSatSun.NoActionBar" />
+        <activity
+            android:name=".BottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FragmentLoadwithJavaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FragmentLoadwithXmlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WebviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TypeofMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".CustomGridViewActivity"
             android:exported="false" />
         <activity
