@@ -36,7 +36,6 @@ public class APICALL_SignUpActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btn_login);
          btnSignUp = findViewById(R.id.btn_signUp);
 
-
          btnSignUp.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
@@ -73,7 +72,8 @@ public class APICALL_SignUpActivity extends AppCompatActivity {
                 map.put("first_name",strFN);
                 map.put("last_name",strLN);
                 map.put("email",strEmail);
-                map.put("Password",strPassword);
+                map.put("password",strPassword);
+                map.put("gender","female");
 
                 return map;
             }
