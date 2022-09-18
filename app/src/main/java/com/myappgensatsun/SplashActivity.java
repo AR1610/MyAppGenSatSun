@@ -20,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashActivity.this,MainActivity2.class);
+                Intent i = new Intent(SplashActivity.this, APICALL_SignUpActivity.class);
                 startActivity(i);
                 finish(); // clear stack
             }
