@@ -20,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashActivity.this, MyServiceActivity.class);
+                Intent i = new Intent(SplashActivity.this, AlarmActivity.class);
                 startActivity(i);
                 finish(); // clear stack
             }

@@ -13,7 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppGenSatSun"
         android:usesCleartextTraffic="true">
-        <service android:name=".MyService"/>
+        <activity
+            android:name=".AlarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+
+        <service android:name=".MyService" />
+
         <activity
             android:name=".MyServiceActivity"
             android:exported="false" />
@@ -91,6 +99,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:name=".BroadCast"/>
     </application>
 
 </manifest>
